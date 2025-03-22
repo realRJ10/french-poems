@@ -16,6 +16,9 @@ h1 {
 header {
   margin-bottom: 30px;
 }
+.hidden {
+  display: none;
+}
 a {
   color: rgb(53, 53, 60);
 }
@@ -69,4 +72,18 @@ footer {
   text-align: center;
   margin-top: 30px;
   font-size: 13px;
+}
+.blinking-text {
+  animation: smoothBlink 1.5s ease-in-out infinite;
+  font-size: 16px;
+}
+
+@keyframes smoothBlink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
 }
