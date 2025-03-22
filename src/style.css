@@ -19,14 +19,14 @@ header {
 a {
   color: rgb(53, 53, 60);
 }
-
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  font-size: 12px;
+  opacity: 0.6;
+}
 form {
-  padding: 30px;
-  background-color: rgba(243, 236, 243, 0.507);
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
-  margin-bottom: 30px;
 }
 .instructions {
   padding: 16px;
@@ -57,7 +57,14 @@ form {
   border-left: 3px solid rgb(83, 51, 136);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
-
+.form-container {
+  padding: 30px;
+  background-color: rgba(243, 236, 243, 0.507);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  margin-bottom: 30px;
+}
 footer {
   text-align: center;
   margin-top: 30px;

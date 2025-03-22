@@ -16,18 +16,22 @@
       </header>
 
       <main>
-        <form id="poem-gen-form">
-          <input
-            type="text"
-            placeholder="Enter the topic"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="sub-button" />
-        </form>
+        <div class="form-container">
+          <form id="poem-gen-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of your poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="sub-button" />
+          </form>
+          <div class="hint">i.e: Flower, Love or Star</div>
+        </div>
+
         <div class="poem" id="poem"></div>
       </main>
 
