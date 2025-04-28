@@ -1,81 +1,95 @@
 body {
-  background-color: rgba(145, 138, 169, 0.553);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #c2becf;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
+
 h1 {
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 1.5;
-  color: rgba(0, 0, 0, 0.781);
+  font-weight: 600;
+  font-size: 2.2rem;
+  color: #4a4458;
   text-align: center;
+  margin-bottom: 1.8rem;
 }
+
 .container {
-  margin: 120px auto;
+  margin: 40px auto;
   max-width: 600px;
+  padding: 0 20px;
 }
-header {
-  margin-bottom: 30px;
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
 }
+
+.instructions {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #b2a8c9;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #e6e2ed;
+  outline: none;
+}
+
+.instructions:focus {
+  border-color: #8b7baa;
+  box-shadow: 0 0 0 2px #8b7baa33;
+}
+
+.sub-button {
+  background-color: #b2a8c9;
+  color: #4a4458;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.sub-button:hover {
+  background-color: #9b8fb3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Keep existing styles below, they already match well */
+.form-container {
+  background-color: #dbd5e1;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.poem {
+  background-color: #dbd5e1;
+  border-left: 3px solid #8b7baa;
+}
+
+footer {
+  color: #7a7284;
+}
+
+.hint {
+  color: #6b6577;
+}
+
+/* Keep existing animations and other styles */
 .hidden {
   display: none;
 }
-a {
-  color: rgb(53, 53, 60);
-}
-.hint {
-  line-height: 1.5;
-  margin-top: 5px;
-  font-size: 12px;
-  opacity: 0.6;
-}
-form {
-  display: flex;
-}
-.instructions {
-  padding: 16px;
-  border: 1px solid rgba(145, 138, 169, 0.553);
-  width: 80%;
-  font-size: 16px;
-  border-radius: 50px;
-  line-height: 20px;
-  color: black;
-}
-.sub-button {
-  margin-left: 10px;
-  background: rgba(171, 151, 201, 0.441);
-  color: rgb(53, 53, 60);
-  border: none;
-  width: 150px;
-  font-size: 16px;
-  border-radius: 50px;
-  padding: 14px 24px;
-}
-.poem {
-  font-size: 16px;
-  background-color: rgba(243, 236, 243, 0.507);
-  padding: 20px;
-  color: rgb(53, 53, 60);
-  line-height: 1.5;
-  border-radius: 10px;
-  border-left: 3px solid rgb(83, 51, 136);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-}
-.form-container {
-  padding: 30px;
-  background-color: rgba(243, 236, 243, 0.507);
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px 20px;
-  margin-bottom: 30px;
+.blinking-text {
+  animation: smoothBlink 1.5s ease-in-out infinite;
 }
 footer {
   text-align: center;
-  margin-top: 30px;
-  font-size: 13px;
-}
-.blinking-text {
-  animation: smoothBlink 1.5s ease-in-out infinite;
-  font-size: 16px;
+  margin: 3rem auto 0;
+  font-size: 0.9rem;
+  color: #7a7284;
+  width: 100%;
 }
 
 @keyframes smoothBlink {
