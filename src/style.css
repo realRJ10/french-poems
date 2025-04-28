@@ -1,12 +1,13 @@
 body {
   background-color: #c2becf;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #4a4458;
+  line-height: 1.6;
 }
 
 h1 {
   font-weight: 600;
   font-size: 2.2rem;
-  color: #4a4458;
   text-align: center;
   margin-bottom: 1.8rem;
 }
@@ -15,6 +16,14 @@ h1 {
   margin: 40px auto;
   max-width: 600px;
   padding: 0 20px;
+}
+
+.form-container {
+  background-color: #dbd5e1;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 form {
@@ -31,6 +40,7 @@ form {
   font-size: 1rem;
   background: #e6e2ed;
   outline: none;
+  transition: all 0.2s;
 }
 
 .instructions:focus {
@@ -55,41 +65,52 @@ form {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Keep existing styles below, they already match well */
-.form-container {
-  background-color: #dbd5e1;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-}
-
 .poem {
   background-color: #dbd5e1;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  color: #4a4458;
+  line-height: 1.6;
   border-left: 3px solid #8b7baa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
-footer {
-  color: #7a7284;
+.poem.generating {
+  position: relative;
+  opacity: 0.8;
+}
+
+.blinking-text {
+  animation: smoothBlink 1.5s ease-in-out infinite;
+  font-size: 1rem;
+  margin: 0 auto;
+  color: #6b6577;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
 }
 
 .hint {
   color: #6b6577;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
 }
 
-/* Keep existing animations and other styles */
-.hidden {
-  display: none;
-}
-.blinking-text {
-  animation: smoothBlink 1.5s ease-in-out infinite;
-}
 footer {
   text-align: center;
   margin: 3rem auto 0;
   font-size: 0.9rem;
   color: #7a7284;
   width: 100%;
+}
+
+.hidden {
+  display: none;
 }
 
 @keyframes smoothBlink {
