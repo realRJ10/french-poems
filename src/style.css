@@ -68,7 +68,7 @@ form {
 .poem {
   background-color: #dbd5e1;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 2rem;
   margin: 2rem auto;
   color: #4a4458;
   line-height: 1.6;
@@ -77,7 +77,14 @@ form {
   min-height: 120px;
   display: flex;
   align-items: center;
-  transition: all 0.3s ease;
+  justify-content: center;
+  text-align: center;
+}
+
+/* If you need to handle multiple paragraphs in the poem */
+.poem p {
+  margin: 0.5rem 0;
+  width: 100%;
 }
 
 .poem.generating {
@@ -87,14 +94,12 @@ form {
 
 .blinking-text {
   animation: smoothBlink 1.5s ease-in-out infinite;
-  font-size: 1rem;
-  margin: 0 auto;
+  font-size: 1.1rem;
   color: #6b6577;
   width: 100%;
   text-align: center;
-  padding: 2rem;
+  margin: 0;
 }
-
 .hint {
   color: #6b6577;
   font-size: 0.9rem;
