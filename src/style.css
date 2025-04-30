@@ -44,6 +44,12 @@ form {
   box-sizing: border-box;
 }
 
+.instructions::placeholder {
+  color: #6b6577;
+  font-size: 0.9rem;
+  opacity: 1;
+}
+
 .instructions:focus {
   border-color: #8b7baa;
   box-shadow: 0 0 0 2px #8b7baa33;
@@ -53,13 +59,14 @@ form {
   background-color: #b2a8c9;
   color: #4a4458;
   border: none;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 1.2rem;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.2s;
   flex-shrink: 0;
   box-sizing: border-box;
+  white-space: nowrap;
 }
 
 .sub-button:hover {
@@ -130,7 +137,7 @@ footer {
   }
 }
 
-/* Mobile Styles (80/20 split) */
+/* Mobile Styles */
 @media (max-width: 480px) {
   form {
     gap: 8px;
@@ -139,12 +146,17 @@ footer {
   .instructions {
     width: 80%;
     flex: none;
+    font-size: 0.9rem;
+  }
+
+  .instructions::placeholder {
+    font-size: 0.85rem;
   }
 
   .sub-button {
     width: 20%;
-    padding: 0.6rem;
-    white-space: nowrap;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
   }
 
   h1 {
