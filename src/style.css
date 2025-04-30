@@ -30,6 +30,7 @@ form {
   display: flex;
   gap: 10px;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .instructions {
@@ -41,6 +42,8 @@ form {
   background: #e6e2ed;
   outline: none;
   transition: all 0.2s;
+  min-width: 0;
+  width: 100%;
 }
 
 .instructions:focus {
@@ -81,7 +84,6 @@ form {
   text-align: center;
 }
 
-/* If you need to handle multiple paragraphs in the poem */
 .poem p {
   margin: 0.5rem 0;
   width: 100%;
@@ -100,6 +102,7 @@ form {
   text-align: center;
   margin: 0;
 }
+
 .hint {
   color: #6b6577;
   font-size: 0.9rem;
@@ -125,5 +128,36 @@ footer {
   }
   50% {
     opacity: 0.3;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 480px) {
+  form {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .sub-button {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 0 15px;
+    margin: 20px auto;
+  }
+
+  .form-container {
+    padding: 1rem;
+  }
+
+  .poem {
+    padding: 1.5rem;
+    margin: 1.5rem auto;
   }
 }
