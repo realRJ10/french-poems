@@ -112,9 +112,9 @@ form {
 
 footer {
   text-align: center;
-  margin: 2rem auto 0;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #7a7284;
+  margin-top: 2rem;
 }
 
 .hidden {
