@@ -120,6 +120,19 @@ footer {
 .hidden {
   display: none;
 }
+a {
+  text-decoration: none;
+  color: #585889;
+  transition: color 0.2s ease;
+}
+
+a:active {
+  color: #6a5acd;
+}
+
+a:hover {
+  color: #4b0082;
+}
 
 @keyframes smoothBlink {
   0%,
