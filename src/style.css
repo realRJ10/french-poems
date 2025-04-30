@@ -30,7 +30,6 @@ form {
   display: flex;
   gap: 10px;
   margin-bottom: 1rem;
-  width: 100%;
 }
 
 .instructions {
@@ -42,8 +41,7 @@ form {
   background: #e6e2ed;
   outline: none;
   transition: all 0.2s;
-  min-width: 0;
-  width: 100%;
+  box-sizing: border-box;
 }
 
 .instructions:focus {
@@ -61,6 +59,7 @@ form {
   cursor: pointer;
   transition: all 0.2s;
   flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .sub-button:hover {
@@ -131,25 +130,23 @@ footer {
   }
 }
 
-/* Previous styles remain the same until the media query */
-
+/* Mobile Styles (80/20 split) */
 @media (max-width: 480px) {
   form {
-    flex-wrap: wrap;
     gap: 8px;
   }
 
   .instructions {
-    width: calc(100% - 110px); /* Adjust based on button width */
+    width: 80%;
     flex: none;
   }
 
   .sub-button {
-    width: 100px;
-    padding: 0.8rem;
+    width: 20%;
+    padding: 0.6rem;
+    white-space: nowrap;
   }
 
-  /* Keep other mobile styles from previous version */
   h1 {
     font-size: 1.8rem;
   }
