@@ -7,13 +7,13 @@ body {
 
 h1 {
   font-weight: 600;
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-align: center;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.5rem;
 }
 
 .container {
-  margin: 40px auto;
+  margin: 30px auto;
   max-width: 600px;
   padding: 0 20px;
 }
@@ -22,8 +22,8 @@ h1 {
   background-color: #dbd5e1;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 form {
@@ -37,7 +37,7 @@ form {
   padding: 0.8rem;
   border: 1px solid #b2a8c9;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   background: #e6e2ed;
   outline: none;
   transition: all 0.2s;
@@ -77,8 +77,8 @@ form {
 .poem {
   background-color: #dbd5e1;
   border-radius: 12px;
-  padding: 2rem;
-  margin: 2rem auto;
+  padding: 1.5rem;
+  margin: 1.5rem auto;
   color: #4a4458;
   line-height: 1.6;
   border-left: 3px solid #8b7baa;
@@ -93,11 +93,6 @@ form {
 .poem p {
   margin: 0.5rem 0;
   width: 100%;
-}
-
-.poem.generating {
-  position: relative;
-  opacity: 0.8;
 }
 
 .blinking-text {
@@ -117,10 +112,9 @@ form {
 
 footer {
   text-align: center;
-  margin: 3rem auto 0;
-  font-size: 0.9rem;
+  margin: 2rem auto 0;
+  font-size: 0.85rem;
   color: #7a7284;
-  width: 100%;
 }
 
 .hidden {
@@ -139,14 +133,18 @@ footer {
 
 /* Mobile Styles */
 @media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
   form {
     gap: 8px;
   }
 
   .instructions {
     width: 80%;
-    flex: none;
     font-size: 0.9rem;
+    padding: 0.7rem;
   }
 
   .instructions::placeholder {
@@ -155,29 +153,20 @@ footer {
 
   .sub-button {
     width: 20%;
-    padding: 0.6rem 0.8rem;
     font-size: 0.85rem;
+    padding: 0.7rem;
   }
 
   h1 {
-    font-size: 1.8rem;
-  }
-
-  .container {
-    padding: 0 15px;
-    margin: 20px auto;
+    font-size: 1.7rem;
   }
 
   .form-container {
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
 
   .poem {
-    padding: 1.5rem;
-    margin: 1.5rem auto;
-  }
-
-  .hint {
-    font-size: 0.8rem;
+    padding: 1.2rem;
+    margin: 1.2rem auto;
   }
 }
