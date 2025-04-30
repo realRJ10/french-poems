@@ -131,18 +131,25 @@ footer {
   }
 }
 
-/* Mobile Responsive Styles */
+/* Previous styles remain the same until the media query */
+
 @media (max-width: 480px) {
   form {
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 8px;
   }
 
+  .instructions {
+    width: calc(100% - 110px); /* Adjust based on button width */
+    flex: none;
+  }
+
   .sub-button {
-    width: 100%;
+    width: 100px;
     padding: 0.8rem;
   }
 
+  /* Keep other mobile styles from previous version */
   h1 {
     font-size: 1.8rem;
   }
@@ -159,5 +166,9 @@ footer {
   .poem {
     padding: 1.5rem;
     margin: 1.5rem auto;
+  }
+
+  .hint {
+    font-size: 0.8rem;
   }
 }
